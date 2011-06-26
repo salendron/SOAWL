@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:padding="2pt"
+    >
+    
+   <TextView
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:text="@string/soawl"
+   	android:textSize="15pt"
+   	android:textStyle="bold"
+   />
+   
+   <TextView
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:text="@string/author"
+   	android:textSize="9pt"
+   />
+    
+    
+    <TextView
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:text="@string/twowaysslidebutton"
+   	android:textSize="10pt"
+   	android:textStyle="bold"
+   	android:layout_marginTop="10pt"
+   />
+    
+   <at.theengine.android.soawl.TwoWaysSlideButton
+    android:id="@+id/twsbTest"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="5pt"
+    	android:paddingBottom="5pt"
+   />
+   
+   <TextView
+   android:id="@+id/tvTwsbTest"
+   android:layout_height="wrap_content"
+   android:layout_width="fill_parent"
+   android:text="@string/none"
+   />
+</LinearLayout>

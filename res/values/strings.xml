@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="soawl">SOAWL</string>
+    <string name="app_name">SOAWL</string>
+    <string name="right">RIGHT</string>
+    <string name="left">LEFT</string>
+    <string name="clicked">CLICKED</string>
+    <string name="twowaysslidebutton">TwoWaysSlideButton</string>
+    <string name="author">Author: Bruno Hautzenberger</string>
+    <string name="none">...</string>
+</resources>
