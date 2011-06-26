@@ -38,6 +38,9 @@ public class SOAWLTest extends Activity {
         
         //initialize TwoWaysSlideButton
         initTwoWaysSlideButton();
+        
+        //initialize SlideButton
+        initSlideButton();
     }
     
     /*
@@ -63,6 +66,27 @@ public class SOAWLTest extends Activity {
         	@Override
         	public void onClick(View v){
         		((TextView) findViewById(R.id.tvTwsbTest)).setText(R.string.clicked);
+        	}
+        });
+    }
+    
+    /*
+     * Initializes the SlideButton
+     */
+    private void initSlideButton(){
+        SlideButton sbTest = (SlideButton) findViewById(R.id.sbTest);
+        
+        //set a new setOnTwoWaysSlideButtonEventListener
+        sbTest.setOnSlideButtonEventListener(new OnSlideButtonEventListener(){
+        	
+        	@Override
+        	public void onSlide(View v){
+        		((TextView) findViewById(R.id.tvSbTest)).setText(R.string.slided);
+        	}
+        	
+        	@Override
+        	public void onClick(View v){
+        		((TextView) findViewById(R.id.tvSbTest)).setText(R.string.clicked);
         	}
         });
     }

@@ -8,4 +8,6 @@
     <string name="twowaysslidebutton">TwoWaysSlideButton</string>
     <string name="author">Author: Bruno Hautzenberger</string>
     <string name="none">...</string>
+    <string name="slided">SLIDED</string>
+    <string name="slidebutton">SlideButton</string>
 </resources>

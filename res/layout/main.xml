@@ -46,4 +46,28 @@
    android:layout_width="fill_parent"
    android:text="@string/none"
    />
+   
+   <TextView
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:text="@string/slidebutton"
+   	android:textSize="10pt"
+   	android:textStyle="bold"
+   	android:layout_marginTop="10pt"
+   />
+    
+   <at.theengine.android.soawl.SlideButton
+    android:id="@+id/sbTest"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="5pt"
+    	android:paddingBottom="5pt"
+   />
+   
+   <TextView
+   android:id="@+id/tvSbTest"
+   android:layout_height="wrap_content"
+   android:layout_width="fill_parent"
+   android:text="@string/none"
+   />
 </LinearLayout>
