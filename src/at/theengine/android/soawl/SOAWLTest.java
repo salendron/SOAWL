@@ -22,6 +22,8 @@ package at.theengine.android.soawl;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 /*
@@ -29,6 +31,8 @@ import android.widget.TextView;
  * This class implements tests all controls contained in this library
  */
 public class SOAWLTest extends Activity {
+	
+	private RichEditText ret;
 	
     /** Called when the activity is first created. */
     @Override
@@ -41,6 +45,9 @@ public class SOAWLTest extends Activity {
         
         //initialize SlideButton
         initSlideButton();
+        
+        //initialize RichEditText
+        initRichEditText();
     }
     
     /*
@@ -89,5 +96,28 @@ public class SOAWLTest extends Activity {
         		((TextView) findViewById(R.id.tvSbTest)).setText(R.string.clicked);
         	}
         });
+    }
+
+    private void initRichEditText(){
+    	ret = (RichEditText) findViewById(R.id.retTest);
+    	ret.setDrawLines(true);
+    	
+    	Button btnRTEBold = (Button) findViewById(R.id.btnRTEBold);
+    	btnRTEBold.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				ret.setBold(!ret.getBold());
+			}
+		});
+    	
+    	Button btnRTEItalic = (Button) findViewById(R.id.btnRTEItalic);
+    	btnRTEItalic.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				ret.setItalic(!ret.getItalic());
+			}
+		});
     }
 }

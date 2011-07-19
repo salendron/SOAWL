@@ -70,4 +70,45 @@
    android:layout_width="fill_parent"
    android:text="@string/none"
    />
+   
+   <TextView
+   	android:layout_height="wrap_content"
+   	android:layout_width="fill_parent"
+   	android:text="@string/richedittext"
+   	android:textSize="10pt"
+   	android:textStyle="bold"
+   	android:layout_marginTop="10pt"
+   />
+   
+   <LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+		
+		<Button android:id="@+id/btnRTEBold"
+			android:layout_width="0dp"
+		    android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="BOLD"
+			android:textStyle="normal"
+			/>
+			
+		<Button android:id="@+id/btnRTEItalic"
+			android:layout_width="0dp"
+		    android:layout_weight="1"
+			android:layout_height="wrap_content"
+			android:text="ITALIC"
+			android:textStyle="normal"
+			/>
+	    
+	    </LinearLayout>
+   
+   <at.theengine.android.soawl.RichEditText
+    	android:id="@+id/retTest"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingTop="5pt"
+    	android:paddingBottom="5pt"
+   />
 </LinearLayout>
